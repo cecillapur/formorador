@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--LINK BOOTSTRAP-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    
+
+
+<section class="container mt-5 col-lg-8 col-xl-7" id="form-orador">
+    <div class="row justify-content-center">
+      <div>           
+        <h6 class="mb-2 text-muted text-center" >VENTA</h6>
+        <h2 class="text-center">VALOR DE TICKET $200</h2>
+    </div>
+
+    <form>
+    <div class="row ">
+        <div class="col mb-3 " >
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" id="nombre" >
+        </div>
+        
+        <div class="col mb-3">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" id="apellido" >
+        </div>
+      </div>
+
+      <div class="col  mb-3">
+        <input type="email" class="form-control" placeholder="Correo" aria-label="email" id="email" >
+      </div>
+    <div class="row ">
+    <div class="col mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+        <input type="number" class="form-control" id="cantidad" placeholder="cantidad" >
+      </div>
+      <div class="col mb-3 ">
+        <label for="exampleFormControlInput1" class="form-label">Categoria</label>
+        <div class="col ">                
+            <select class="form-select" aria-label="Default select example" id="categoriaSelect">
+              <option>Seleccione una opcion</option>  
+                <option value="0">Sin Categoria</option>
+                <option value="1">Estudiante</option>
+                <option value="2">Trainee</option>
+                <option value="3">Junior</option>
+            </select>
+        </div>
+    </div>
+      <div class="alert alert-primary mt-2 mb-4" role="alert">Total a Pagar: $ <span id="totalPago" class="align-middle"></span>
+      </div>
+    
+</div>  
+</div>
+
+<div class="container-sm mt-5 px-5 col-lg-12 col-xl-12">
+
+<div class="justify-content-md-center">
+    <div class="row row-cols-2 g-3 ">
+        <button type="reset" class="btn btn-success btn-lg boton-comprar " id="borrar">Borrar</button>
+        <button type="button" class="btn btn-success btn-lg boton-comprar " id="resumen">Resumen</button>
+     </div>
+      </div>
+
+      <div class="mt-2">
+        <p id="mensajeNombre"></p>
+        <p id="mensajeApellido"></p>
+        <p id="mensajeEmail"></p>
+        <p id="mensajeCantidad"></p>
+        <p id="mensajeCategoria"></p>
+      </div>
+
+     </div>     
+    </div>
+</form>
+
+</section>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    
+   
+    <!--Mis Estilos-->
+    <link href="css/style1.css" rel="stylesheet"> 
+    
+    <script src="./formulario.js"></script> 
+
+</body>
+</html>
